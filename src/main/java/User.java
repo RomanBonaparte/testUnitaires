@@ -56,8 +56,8 @@ public class User {
     return content.matches(pattern);
     }
     
-    public boolean verifpassword() {
-        String mdp = this.password;
+    public boolean verifpassword(String mdp) {
+        
         return pregMatch("/[a-z][0-9][]A-Z]/", mdp);
         
     }
